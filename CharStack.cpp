@@ -7,7 +7,7 @@ using namespace std;
 // Constructor
  CharStack::CharStack(){
 
- }
+}
     
 // Stack operations
 void CharStack::push(char){
