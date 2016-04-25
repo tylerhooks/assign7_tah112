@@ -6,19 +6,20 @@ using namespace std;
 
 // Constructor
  CharStack::CharStack(){
- 	int x, n; 
- 	stackString.substr(n,x);// returns copy of a substring; n characters long, at postition x 
+ 	
+ 	//int x, n; 
+ 	//stackString.substr(n,x);// returns copy of a substring; n characters long, at postition x 
   }  
 // Stack operations
 void CharStack::push(char str){
-	char n;
+	char n; 
 	if (!isFull())
-    stackString.append(str,n);//first n characters of str appended to stackString 
+    stackString.append(str, n);//first n characters of str appended to stackString 
 }
 char CharStack::pop(){
 	int x; 
 	if(!isEmpty())
-		stackString.at(x);
+		stackString.at(x);//returns character at position x 
 		x--; 
 		return x;
 }

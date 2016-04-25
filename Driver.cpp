@@ -9,15 +9,12 @@ using namespace std;
 
 int main(){
 
-	///TEST///
 
-	CharStack s;  
-    
-    //char x ; 
-    //s.push('T'); 
-	//x = s.pop();  
+	CharStack s; 
+	char x;  
+    s.push('T'); 
+	x = s.pop();  
 	//s.pop();  
-	cout << x; 
-
 	
+	cout << x; 
 }
