@@ -11,10 +11,10 @@ int main(){
 
 
 	CharStack s; 
-	char x;  
-    s.push('T'); 
-	x = s.pop();  
+	//char x;  
+   //s.push('T'); 
+  //x = s.pop();  
 	//s.pop();  
 	
-	cout << x; 
+	//cout << x; 
 }
