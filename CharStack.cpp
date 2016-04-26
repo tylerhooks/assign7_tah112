@@ -1,3 +1,5 @@
+
+
 # include <iostream>
 # include <string>
 # include "CharStack.h"
@@ -28,9 +30,6 @@ char CharStack::pop(){
   
 }
 bool CharStack::isFull() const{ 
-   if(stackString.capacity()<stackString.size())//ask if we're allowed to use capacity! 
-		return true; 
-   else 
     	return false; 
 }
 bool CharStack::isEmpty() const{
