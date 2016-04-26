@@ -23,8 +23,8 @@ char CharStack::pop(){
    	stackString.erase((stackString.size())-1, 1);
    	return x; 
     }
-	//char bad = 'f';
-	//return bad; 
+	char bad = 'f';
+	return bad; 
   
 }
 bool CharStack::isFull() const{ 
