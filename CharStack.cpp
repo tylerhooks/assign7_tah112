@@ -10,18 +10,22 @@ using namespace std;
 }  
 // Stack operations
 void CharStack::push(char str){
-	if (!isFull())
-    stackString.append(str, 1);//first n characters of str appended to stackString 
+	if (!isFull()){
+	stackString.append(1, str);//first n characters of str appended to stackString
+	}
+    
 }
 char CharStack::pop(){
-	 
-   if(!isEmpty())
-	{
-	int p = ((stackString.size())-1); 
-	int x = stackString[p];
-	stackString.substr(x,p);
-	return x; 
-	}
+	
+    if(!isEmpty())
+    {
+   	char x = stackString[((stackString.size())-1)]; 
+   	stackString.erase((stackString.size())-1, 1);
+   	return x; 
+    }
+	char bad = 'f';
+	return bad; 
+  
 }
 bool CharStack::isFull() const{ 
    if(stackString.capacity()<stackString.size())//ask if we're allowed to use capacity! 
