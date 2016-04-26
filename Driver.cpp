@@ -6,15 +6,33 @@
 
 using namespace std; 
 
-
 int main(){
+ string filename;
 
+ cout<<"Please enter filename: ";
+ getline(cin, filename); 
 
-	CharStack s; 
-	//char x;  
-   //s.push('T'); 
-  //x = s.pop();  
-	//s.pop();  
-	
-	//cout << x; 
+ fstream fin; 
+ fin >> filename;  
+ fin.open(filename.c_str());
+ 
+ if(!fin){
+ 	cout<<"file could not be found."<<endl; 
+ 	return -1; 
+ }
+ else 
+
+ while (fin>>filename){
+ 	CharStack p; 
+ 	char open; 
+ 	if(open == '{' || open == '['|| open == '('){
+ 			   p.push(open); 
+ 			   cout << "Bracket pushed"<<endl; 
+     }
+     else 
+     	cout << "nothing";
+     
+
+  // if statements for brakcets 
+  }
 }
