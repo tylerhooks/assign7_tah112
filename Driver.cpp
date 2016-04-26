@@ -1,3 +1,15 @@
+// File Name: Driver.cpp
+//
+// Author: Tyler Hooks
+// Date: 4/13/2016
+// Assignment Number: 7
+// CS 2308.252 Spring 2016
+// Instructor: Jill Seaman
+//
+// Driver for CharStack.cpp
+// Checks for balanced brackets in the text file
+// the user inputs. 
+
 # include <iostream>
 # include <string> 
 # include <fstream>
@@ -105,6 +117,10 @@ int main(){
   fin.close(); 
   return 0;
 }
+//***********************************************************
+// balanced:checks the bracket and returns the mathing 
+// bracket. 
+//***********************************************************
 char balanced (char bal){
     if (bal == '{') return '}';
     if (bal == '(') return ')';
